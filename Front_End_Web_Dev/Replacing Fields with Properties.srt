@@ -1,0 +1,227 @@
+1
+00:00:00,000 --> 00:00:09,506
+[MUSIC]
+
+2
+00:00:09,506 --> 00:00:12,892
+Hi, there this is James,
+in this C# practice session,
+
+3
+00:00:12,892 --> 00:00:16,287
+you'll practice creating and
+using properties in C#.
+
+4
+00:00:16,287 --> 00:00:22,168
+It reinforces what you learned in
+stage 5 of the C# objects course.
+
+5
+00:00:22,168 --> 00:00:24,831
+If you find this practice session
+too challenging to complete,
+
+6
+00:00:24,831 --> 00:00:26,421
+you might need to review that course.
+
+7
+00:00:26,421 --> 00:00:29,855
+See the teacher's notes for a link.
+
+8
+00:00:29,855 --> 00:00:34,657
+This practice session is the fifth in a
+series of sessions where you'll build out
+
+9
+00:00:34,657 --> 00:00:36,999
+a media library console application.
+
+10
+00:00:36,999 --> 00:00:40,460
+Step by step,
+you'll add features to the program.
+
+11
+00:00:40,460 --> 00:00:44,502
+Eventually you'll be able
+to use C# to add, list, and
+
+12
+00:00:44,502 --> 00:00:48,286
+search for items like albums,
+books, and movies,
+
+13
+00:00:48,286 --> 00:00:52,597
+whatever you want to have
+cataloged in your media library.
+
+14
+00:00:52,597 --> 00:00:56,752
+In the previous practice sessions
+we created a class hierarchy for
+
+15
+00:00:56,752 --> 00:00:58,681
+our program's media types and
+
+16
+00:00:58,681 --> 00:01:03,150
+we used encapsulation and arrays to
+improve the design of our program.
+
+17
+00:01:03,150 --> 00:01:08,418
+In this practice session we'll see how we
+can replace class fields with properties.
+
+18
+00:01:08,418 --> 00:01:12,842
+And use computer properties
+to add atributes whose values
+
+19
+00:01:12,842 --> 00:01:15,374
+are based upon other atributes.
+
+20
+00:01:15,374 --> 00:01:20,087
+Go ahead and open your work space from
+the previous practice session, or
+
+21
+00:01:20,087 --> 00:01:24,119
+you can open the work space that
+I´ve attached to this video.
+
+22
+00:01:24,119 --> 00:01:28,361
+If you want,
+you can download the project files in
+
+23
+00:01:28,361 --> 00:01:33,314
+order to use an external editor or
+IDE like Visual Studio.
+
+24
+00:01:33,314 --> 00:01:37,147
+Before we go about replacing
+our class fields to properties,
+
+25
+00:01:37,147 --> 00:01:39,737
+let's reveal what we'd want to do this?
+
+26
+00:01:39,737 --> 00:01:45,138
+In the C# objects course,
+three reasons were discussed.
+
+27
+00:01:45,138 --> 00:01:49,911
+First, properties have getters and
+setters which gives us a way to
+
+28
+00:01:49,911 --> 00:01:55,040
+associate code with the get in and
+or setting of the property's value.
+
+29
+00:01:55,040 --> 00:01:59,398
+Second, properties make
+debugging easier as you can set
+
+30
+00:01:59,398 --> 00:02:02,222
+break points in gitters or setters.
+
+31
+00:02:02,222 --> 00:02:06,945
+And third, properties help future proof
+our code by encapsulating our fields.
+
+32
+00:02:06,945 --> 00:02:11,991
+This gives us a way to change
+the underlying implementation of
+
+33
+00:02:11,991 --> 00:02:16,947
+our class without changing how
+consumers interact with it.
+
+34
+00:02:16,947 --> 00:02:21,479
+Our media library program contains
+four media type related classes.
+
+35
+00:02:21,479 --> 00:02:26,118
+A Media Type base class, and
+
+36
+00:02:26,118 --> 00:02:32,498
+three Media Type subclasses—album,
+
+37
+00:02:32,498 --> 00:02:35,598
+book, and movie.
+
+38
+00:02:42,760 --> 00:02:46,995
+For your first challenge,
+replace each public field with a property,
+
+39
+00:02:46,995 --> 00:02:51,311
+in the MediaType base class, and
+Album, Book, and Movie subclasses.
+
+40
+00:02:51,311 --> 00:02:54,993
+Use either the regular C# property syntax,
+or
+
+41
+00:02:54,993 --> 00:02:59,329
+the more concise auto-implemented
+property syntax.
+
+42
+00:02:59,329 --> 00:03:03,325
+Also use private setters for
+fields that should be read-only and
+
+43
+00:03:03,325 --> 00:03:06,530
+initialize those properties
+via the constructor.
+
+44
+00:03:07,608 --> 00:03:11,671
+And, in the media type base class,
+initialize the loanee and
+
+45
+00:03:11,671 --> 00:03:16,532
+onloan properties and line to an empty
+string and false, respectively.
+
+46
+00:03:16,532 --> 00:03:19,108
+And that's your first challenge.
+
+47
+00:03:19,108 --> 00:03:21,546
+Good luck, and
+we'll see you in the next video,
+
+48
+00:03:21,546 --> 00:03:23,522
+where I'll walk through my solution.
+
